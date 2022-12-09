@@ -1,5 +1,5 @@
 import './App.css';
-import { Bibliography } from './pz08/Bibliography'
+import { Bibliography } from './practice/Bibliography'
 
 function App() {
   return (
