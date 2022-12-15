@@ -1,0 +1,29 @@
+.EventList {
+    width: 600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .EventList a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .EventList .EventItem {
+    border: 1px solid black;
+    width: 275px;
+  }
+  
+  .EventList .EventItem:hover {
+    background-color: bisque;
+  }
+  
+  .EventList .EventItem img {
+    width: 275px;
+  }
+  
+  .EventList .EventItem h2 {
+    min-height: 64px;
+  }
