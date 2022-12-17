@@ -35,10 +35,6 @@ function App() {
 
   return (
     <div className='App'>
-      {/* <nav>
-        <Link to="/form">Form</Link>
-        <Link to="/form/view">Form View</Link>
-      </nav> */}
       
       <main>
         <Routes>

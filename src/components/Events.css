@@ -1,29 +1,55 @@
 .EventList {
-    width: 600px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-  
-  .EventList a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .EventList .EventItem {
-    border: 1px solid black;
-    width: 275px;
-  }
-  
-  .EventList .EventItem:hover {
-    background-color: bisque;
-  }
-  
-  .EventList .EventItem img {
-    width: 275px;
-  }
-  
-  .EventList .EventItem h2 {
-    min-height: 64px;
-  }
+  width: 600px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.EventList a {
+  text-decoration: none;
+  color: black;
+}
+
+.EventList .EventItem {
+  border: 1px solid black;
+  width: 275px;
+}
+
+.EventList .EventItem:hover {
+  background-color: bisque;
+}
+
+.EventList .EventItem img {
+  width: 275px;
+}
+
+.EventList .EventItem h2 {
+  min-height: 64px;
+}
+
+button {
+  background-color: rgb(228, 228, 228);
+  color: white;
+  margin-left: 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 50px;
+}
+
+button:hover {
+  background-color: bisque;
+  color: black;
+}
+
+.Link {
+  border: 1px solid;
+  border-radius: 3px;
+  width: 200px;
+  margin: auto;
+  background-color: rgb(228, 228, 228);
+}
+
+.Link:hover {
+  background-color: bisque;
+}

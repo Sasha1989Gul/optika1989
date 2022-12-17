@@ -1,11 +1,13 @@
+import { render } from '@testing-library/react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useParams } from 'react-router-dom'
-
+import React from "react"
 import { increaseLike } from '../redux/events'
 
 import './Events.css'
 
-const List = () => {    
+const List = () => {
+
     const events = useSelector((state) => state.events.data)
 
     return (
@@ -31,11 +33,9 @@ const List = () => {
 
 const Page = () => {
     const dispatch = useDispatch()
-    const {eventId} = useParams()  
-    
-    // const {account, login, } = useAuth()  
+    const { eventId } = useParams()
 
-    const event = useSelector((state) => 
+    const event = useSelector((state) =>
         state.events.data.find(item => item.id == eventId))
 
     return (
@@ -51,13 +51,50 @@ const Page = () => {
                 <p><strong>Режиссер</strong> {event.director}</p>
                 <p>{event.description}</p>
                 <p>
-                <strong>Likes</strong> {event.likes}
-                <button onClick={e => dispatch(increaseLike({ id: eventId }))}>Like</button>
+                    <strong>Likes</strong> {event.likes}
+                    <button onClick={e => dispatch(increaseLike({ id: eventId }))}>Like</button>
                 </p>
             </div>
-            <Link to="/events">Вернуться к списку</Link>
+            <div className='Link'>
+                <Link to="/events">Вернуться к списку</Link>
+            </div>
         </div>
     )
+}
+
+
+class loginForm extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            login: '',
+            coment: ''
+        };
+        this.onChangeLogin = this.onChangeLogin.bind(this);
+        this.onChangeComent = this.onChangeComent.bind(this);
+        this.onChangeSubmit = this.onChangeSubmit.bind(this);
+    }
+
+    onSubmit(event) {
+        alert('${this.state.login} , Спасибо за коментарий');
+        event.preventDefault();
+    }
+    onChangeLogin(event) {
+        this.setState({ login: event.target.value });
+    }
+
+    onChangeComent(event) {
+        this.setState({ coment: event.target.value });
+    }
+    render() {
+        return (
+            <from onSubmit={this.onSubmit}>
+                <p><label>Логин: <input type='text' name='login' onChange={this.onChangeLogin} value={this.state.onChangeLogin}></input></label></p>
+                <p><label>Коментарий: <input type='coment' name='coment' onChange={this.onChangeComent} value={this.state.coment}></input></label></p>
+                <p><input type='submit' value='Submit'></input></p>
+            </from>
+        )
+    }
 }
 
 export { List, Page }
