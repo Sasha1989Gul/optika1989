@@ -37,7 +37,7 @@ button {
   width: 50px;
 }
 
-button:hover {
+/*button:hover {
   background-color: bisque;
   color: black;
 }
@@ -52,4 +52,4 @@ button:hover {
 
 .Link:hover {
   background-color: bisque;
-}
+}*/

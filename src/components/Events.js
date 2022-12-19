@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react'
+/*import { render } from '@testing-library/react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useParams } from 'react-router-dom'
 import React from "react"
@@ -97,4 +97,4 @@ class loginForm extends React.Component {
     }
 }
 
-export { List, Page }
+export { List, Page, loginForm }*/

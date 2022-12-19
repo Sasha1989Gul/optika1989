@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit'
+/*import { createSlice } from '@reduxjs/toolkit'
 
 const eventSlice = createSlice({
   name: 'events',
@@ -54,4 +54,4 @@ const eventSlice = createSlice({
 })
 
 export const { increaseLike, addFavorite } = eventSlice.actions
-export default eventSlice.reducer
+export default eventSlice.reducer*/

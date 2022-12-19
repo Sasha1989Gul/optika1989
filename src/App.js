@@ -1,11 +1,11 @@
-/*import './App.css';
+import './App.css';
 import { Bibliography } from './practice/Bibliography'
 import { Zenit } from './practice/Zenit'
 import { Zenit2 } from './practice/Zenit'
 import { Zenit3 } from './practice/Zenit'
 import { APet } from './practice/APet'
 import { FavoriteMusicAlbum } from './homework_6/FavoriteMusicAlbum'
-
+import { MyInformation, Form } from './homework_6/MyInformation'
 
 function App() {
   return (
@@ -15,18 +15,16 @@ function App() {
       <Zenit2></Zenit2>
       <Zenit3></Zenit3>
       <APet></APet>
-
-      <FavoriteMusicAlbum>Название альбома: The Massacre </FavoriteMusicAlbum>
-      <FavoriteMusicAlbum>Название исполнителя: 50 Cent </FavoriteMusicAlbum>
-      <FavoriteMusicAlbum>Год издания: 1 января 2004 </FavoriteMusicAlbum>
-      <FavoriteMusicAlbum>Издатель: Curtis James Jackson III </FavoriteMusicAlbum>
-      <FavoriteMusicAlbum>Обложка альбома: <img src="50cent.jpg" /> </FavoriteMusicAlbum>
+      <FavoriteMusicAlbum></FavoriteMusicAlbum>
+      <MyInformation></MyInformation>
     </div>
   );
 }
 
-export default App;*/
-import './App.css';
+export default App;
+
+//--Events--
+/*import './App.css';
 
 import { List, Page } from './components/Events'
 import { Routes, Route, Navigate } from "react-router-dom";
@@ -58,4 +56,4 @@ function App() {
   )  
 }
 
-export default App
+export default App*/

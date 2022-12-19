@@ -1,4 +1,4 @@
-import { configureStore } from '@reduxjs/toolkit'
+/*import { configureStore } from '@reduxjs/toolkit'
 
 import eventReducer from './events'
 
@@ -8,4 +8,4 @@ const store = configureStore({
   },
 })
 
-export default store
+export default store*/
