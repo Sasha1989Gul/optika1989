@@ -1,4 +1,4 @@
-import { Form } from "react-router-dom";
+import React from "react";
 
 function MyInformation() {
     return (
@@ -17,35 +17,39 @@ function MyInformation() {
     );
   }
 
-  class Form extends Comment {
+  class Form extends React.Component {
     state ={
       inputText: '',
+      inputPassword: '',
     }
 
 hendleInputChenge = ({ target: { value }}) => {
   this.setState({
-    inhutText: value,
+    inputText: value,
+    inputPassword: value,
   })
-}
+};
+
+
 
 render() {
-  const{inputText} = this.state;
+  const{inputText, inputPassword} = this.state;
   return(
     <form>
       <label>
         ФИО: 
-        <input tupe="text" name="name" value={inputText} />
+        <input tupe="text" name="name" onChange={this.hendleInputChenge} value={inputText} />
       </label>
       <br/>
       <label>
       Телефон: 
-        <input tupe="text" name="name" value={inputText} />
+        <input tupe="password" name="nam" onChange={this.hendleInputChenge} value={inputPassword} />
         <br/>
       </label>
       <br/>
       <label>
       email: 
-        <input tupe="text" name="name" value={inputText} />
+        <input tupe="text" name="na" onChange={this.hendleInputChenge} value={inputText} />
         <br/>
       </label>
       <br/>

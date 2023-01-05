@@ -17,6 +17,7 @@ function App() {
       <APet></APet>
       <FavoriteMusicAlbum></FavoriteMusicAlbum>
       <MyInformation></MyInformation>
+      <Form></Form>
     </div>
   );
 }
